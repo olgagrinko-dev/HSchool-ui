@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish";
+  font-style: normal;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header h1 {
+  font: 700 60px "Montserrat";
+  color: #001A49;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav p:not(:last-child) {
+  margin-right: 35px;
+}
+header nav p {
+  font: 700 16px "Mulish";
+  color: #001A49;
+}
+header nav p:hover {
+  text-decoration: underline;
+}
+header .btn-start {
+  width: 147px;
+  border-radius: 33px;
+  background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
+  text-align: center;
+  padding: 15px 0;
+  font: 700 16px "Mulish";
+  color: #FFFFFF;
+}

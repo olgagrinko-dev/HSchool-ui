@@ -1,0 +1,59 @@
+$color-font-dark-blue:#001A49;
+$color-font-white:#FFFFFF;
+
+
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: "Mulish"; 
+    font-style: normal;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font: 700 60px 'Montserrat';
+        color: $color-font-dark-blue;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;  
+
+        p:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        p {
+            font: 700 16px 'Mulish';
+            color: $color-font-dark-blue; 
+        }
+
+        p:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .btn-start {
+        width: 147px;
+        border-radius: 33px;
+        background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
+        text-align: center;
+        padding: 15px 0;
+        font: 700 16px 'Mulish';
+        color: $color-font-white;
+    }
+
+
+
+
+}
+
