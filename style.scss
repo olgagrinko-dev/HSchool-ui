@@ -120,9 +120,12 @@ header {
         display: flex;
         flex-direction: row;
         width: 100%;
+        padding: 20px 0;
+        margin-bottom: 156px;
         background: #FFFFFF;
         border: 1px solid #E7EAEB;
         border-radius: 21px;
+
 
         .info-tile {
             display: flex;
@@ -141,7 +144,7 @@ header {
                 text-align: center;
                 color: #4F596A;
             }
-        
+
         }
 
         .seporator {
@@ -149,15 +152,66 @@ header {
             height: 112px;
             background: #E7EAEB;
         }
-        
+
     }
 
 }
 
+.benefits {
+    display: flex;
+    flex-direction: column;
+
+    .school-success {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 61px;
+
+        span {
+            font: 700 46px 'Montserrat';
+            color: #001A49;
+        }
+
+        p {
+            font: 400 20px 'Mulish';
+            color: #4F596A;
+        }
+    }
+
+    .benefits-school {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(44.11deg, #99C6F2 15.75%, #3D75BF 84.63%);
+        border-radius: 21px;
 
 
+        .img-group-2 {
+            background-image: url(./assets/Group\ 8.svg);
+            background-repeat: no-repeat;
+            width: 64px;
+            height: 64px;
+            margin-right: 20px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 1120px;
+            padding: 40px;
+            margin-bottom: 20px;
 
 
+            span {
+                font: 700 24px 'Montserrat';
+                color: #001A49;
+            }
 
+            p {
+                font: 400 16px 'Mulish';
+                color: #4F596A;
+            }
+        }
 
+    }
 
+}
