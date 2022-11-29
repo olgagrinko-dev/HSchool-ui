@@ -116,11 +116,20 @@ header {
         height: 288px;
     }
 
+    .img-group-1 {
+        position: relative;
+        left: 0;
+    }
+
     .statistics {
+        position: absolute;
         display: flex;
         flex-direction: row;
-        width: 100%;
-        padding: 20px 0;
+     
+        width: 1120px;
+        height: 172px;
+       
+        margin-left: 160px;
         margin-bottom: 156px;
         background: #FFFFFF;
         border: 1px solid #E7EAEB;
