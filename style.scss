@@ -1,5 +1,6 @@
 $color-font-dark-blue: #001A49;
 $color-font-white: #FFFFFF;
+$color-font-grey: #4F596A;
 
 
 * {
@@ -58,169 +59,166 @@ header {
     }
 }
 
-.main {
-    display: flex;
-
-    .flex-main {
+main {
+    .basic {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 149px;
 
-        .publication {
-            h1 {
-                font: 700 60px 'Montserrat';
-                color: #001A49;
-                margin-bottom: 20px;
+        .flex-basic {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 149px;
+
+            .publication {
+                h1 {
+                    font: 700 60px 'Montserrat';
+                    color: $color-font-dark-blue;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font: 400 20px 'Mulish';
+                    color: $color-font-grey;
+                    margin-bottom: 72px;
+                }
+
+                .btn-start {
+                    width: 205px;
+                    border-radius: 33px;
+                    background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
+                    text-align: center;
+                    padding: 22px 0;
+                    font: 700 16px 'Mulish';
+                    color: $color-font-white;
+                }
+
+                .btn-start:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .img-main {
+                background-image: url(./assets/Group\ 7.svg);
+                background-repeat: no-repeat;
+                width: 590px;
+                height: 360px;
+                margin-bottom: 270px;
+            }
+        }
+    }
+
+    .info {
+        display: flex;
+
+        .img-group-1 {
+            background-image: url(./assets/Side\ Shape.svg);
+            background-repeat: no-repeat;
+            width: 288px;
+            height: 288px;
+        }
+
+        .img-group-1 {
+            position: relative;
+        }
+
+        .statistics {
+            position: absolute;
+            display: flex;
+            width: 1120px;
+            height: 172px;
+            margin-left: 160px;
+            margin-bottom: 156px;
+            background: #FFFFFF;
+            border: 1px solid #E7EAEB;
+            border-radius: 21px;
+
+
+            .info-tile {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: auto;
+
+                span {
+                    font: 700 40px 'Montserrat';
+                    text-align: center;
+                    color: $color-font-dark-blue;
+                }
+
+                p {
+                    font: 400 16px 'Mulish';
+                    text-align: center;
+                    color: $color-font-grey;
+                }
+
+            }
+
+            .seporator {
+                width: 1px;
+                height: 112px;
+                background: #E7EAEB;
+                margin: 30px;
+            }
+
+        }
+
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+
+        .school-success {
+            margin: auto;
+            text-align: center;
+            margin-bottom: 61px;
+
+            span {
+                font: 700 46px 'Montserrat';
+                color: $color-font-dark-blue;
             }
 
             p {
                 font: 400 20px 'Mulish';
-                color: #4F596A;
-                margin-bottom: 72px;
-            }
-
-            .btn-start {
-                width: 205px;
-                border-radius: 33px;
-                background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
-                text-align: center;
-                padding: 22px 0;
-                font: 700 16px 'Mulish';
-                color: $color-font-white;
-            }
-
-            .btn-start:hover {
-                text-decoration: underline;
+                color: $color-font-grey;
             }
         }
 
-        .img-main {
-            background-image: url(./assets/Group\ 7.svg);
-            background-repeat: no-repeat;
-            width: 590px;
-            height: 360px;
-            margin-bottom: 270px;
-        }
-    }
-}
-
-.info {
-    display: flex;
-
-    .img-group-1 {
-        background-image: url(./assets/Side\ Shape.svg);
-        background-repeat: no-repeat;
-        width: 288px;
-        height: 288px;
-    }
-
-    .img-group-1 {
-        position: relative;
-        left: 0;
-    }
-
-    .statistics {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-     
-        width: 1120px;
-        height: 172px;
-       
-        margin-left: 160px;
-        margin-bottom: 156px;
-        background: #FFFFFF;
-        border: 1px solid #E7EAEB;
-        border-radius: 21px;
-
-
-        .info-tile {
+        .benefits-school {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            margin: auto;
 
-            span {
-                font: 700 40px 'Montserrat';
-                text-align: center;
-                color: #001A49;
+            .img-group-2 {
+                background-image: url(./assets/Group\ 8.svg);
+                background-repeat: no-repeat;
+                width: 64px;
+                height: 64px;
+                margin-right: 20px;
             }
 
-            p {
-                font: 400 16px 'Mulish';
-                text-align: center;
-                color: #4F596A;
-            }
+            article {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 1120px;
+                height: 172px;
+                padding: 0 30px;
+                margin-bottom: 20px;
+                background: linear-gradient(44.11deg, #99C6F2 15.75%, #3D75BF 84.63%);
+                border-radius: 21px;
 
-        }
+                span {
+                    font: 700 24px 'Montserrat';
+                    color: $color-font-dark-blue;
+                }
 
-        .seporator {
-            width: 1px;
-            height: 112px;
-            background: #E7EAEB;
-        }
-
-    }
-
-}
-
-.benefits {
-    display: flex;
-    flex-direction: column;
-
-    .school-success {
-        margin: auto;
-        text-align: center;
-        margin-bottom: 61px;
-
-        span {
-            font: 700 46px 'Montserrat';
-            color: #001A49;
-        }
-
-        p {
-            font: 400 20px 'Mulish';
-            color: #4F596A;
-        }
-    }
-
-    .benefits-school {
-        display: flex;
-        flex-direction: column;
-        background: linear-gradient(44.11deg, #99C6F2 15.75%, #3D75BF 84.63%);
-        border-radius: 21px;
-
-
-        .img-group-2 {
-            background-image: url(./assets/Group\ 8.svg);
-            background-repeat: no-repeat;
-            width: 64px;
-            height: 64px;
-            margin-right: 20px;
-        }
-
-        article {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 1120px;
-            padding: 40px;
-            margin-bottom: 20px;
-
-
-            span {
-                font: 700 24px 'Montserrat';
-                color: #001A49;
-            }
-
-            p {
-                font: 400 16px 'Mulish';
-                color: #4F596A;
+                p {
+                    font: 400 16px 'Mulish';
+                    color: $color-font-grey;
+                }
             }
         }
 
     }
-
 }
