@@ -11,7 +11,7 @@ $color-font-grey: #4F596A;
 }
 
 body {
-    width: 1200px;
+    width: 1440px;
     margin: auto;
 }
 
@@ -104,6 +104,9 @@ main {
                 width: 590px;
                 height: 360px;
                 margin-bottom: 270px;
+                position: relative;
+                left: 100px;
+               
             }
         }
     }
@@ -119,15 +122,17 @@ main {
         }
 
         .img-group-1 {
-            position: relative;
+            position: absolute;
+            left: 600px;
         }
 
         .statistics {
-            position: absolute;
+            position: relative;
             display: flex;
-            width: 1120px;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1200px;
             height: 172px;
-            margin-left: 160px;
             margin-bottom: 156px;
             background: #FFFFFF;
             border: 1px solid #E7EAEB;
@@ -137,10 +142,10 @@ main {
             .info-tile {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                align-items: center;
                 margin: auto;
 
-                span {
+                h2 {
                     font: 700 40px 'Montserrat';
                     text-align: center;
                     color: $color-font-dark-blue;
@@ -170,11 +175,11 @@ main {
         flex-direction: column;
 
         .school-success {
-            margin: auto;
+            margin: auto;           
             text-align: center;
             margin-bottom: 61px;
 
-            span {
+            h1 {
                 font: 700 46px 'Montserrat';
                 color: $color-font-dark-blue;
             }
@@ -205,10 +210,10 @@ main {
                 height: 172px;
                 padding: 0 30px;
                 margin-bottom: 20px;
-                background: linear-gradient(44.11deg, #99C6F2 15.75%, #3D75BF 84.63%);
+                background: linear-gradient(#96bfe887 100%, #3d75bf85 100%);
                 border-radius: 21px;
 
-                span {
+                h3 {
                     font: 700 24px 'Montserrat';
                     color: $color-font-dark-blue;
                 }
