@@ -19,26 +19,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 0;     
 
     h2 {
         font: 700 60px 'Montserrat';
         color: $color-font-dark-blue;
+       
     }
 
     nav {
         display: flex;
-        justify-content: space-between;
-
-        p:not(:last-child) {
-            margin-right: 35px;
-        }
+        justify-content: space-between;        
 
         p {
             font: 700 16px 'Mulish';
             color: $color-font-dark-blue;
         }
 
+        p:not(:last-child) {
+            margin-right: 35px;
+        }
+      
         p:hover {
             text-decoration: underline;
         }
@@ -106,7 +107,7 @@ main {
                 margin-bottom: 270px;
                 position: relative;
                 left: 100px;
-               
+
             }
         }
     }
@@ -119,18 +120,13 @@ main {
             background-repeat: no-repeat;
             width: 288px;
             height: 288px;
-        }
-
-        .img-group-1 {
             position: absolute;
-            left: 600px;
-        }
+            left: 600px;            
+        }        
 
         .statistics {
             position: relative;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            display: flex;                    
             width: 1200px;
             height: 172px;
             margin-bottom: 156px;
@@ -141,19 +137,20 @@ main {
 
             .info-tile {
                 display: flex;
-                flex-direction: column;
+                flex-direction: column;                
                 align-items: center;
+                text-align: center;
                 margin: auto;
 
                 h2 {
                     font: 700 40px 'Montserrat';
-                    text-align: center;
+                    text-align: center;                   
                     color: $color-font-dark-blue;
                 }
 
                 p {
                     font: 400 16px 'Mulish';
-                    text-align: center;
+                    text-align: center;                   
                     color: $color-font-grey;
                 }
 
@@ -163,7 +160,11 @@ main {
                 width: 1px;
                 height: 112px;
                 background: #E7EAEB;
-                margin: 30px;
+                margin-top: 30px;             
+            }
+
+            .seporator:not(:last-child) {
+                margin-right: 100px;              
             }
 
         }
@@ -175,7 +176,7 @@ main {
         flex-direction: column;
 
         .school-success {
-            margin: auto;           
+            margin: auto;
             text-align: center;
             margin-bottom: 61px;
 
