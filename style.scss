@@ -114,6 +114,7 @@ main {
 
     .info {
         display: flex;
+        justify-content: center;
 
         .img-group-1 {
             background-image: url(./assets/Side\ Shape.svg);
@@ -121,7 +122,7 @@ main {
             width: 288px;
             height: 288px;
             position: absolute;
-            left: 600px;            
+            left: 700px;            
         }        
 
         .statistics {
@@ -174,6 +175,7 @@ main {
     .benefits {
         display: flex;
         flex-direction: column;
+       
 
         .school-success {
             margin: auto;
@@ -194,6 +196,7 @@ main {
         .benefits-school {
             display: flex;
             flex-direction: column;
+            margin: auto;
 
             .img-group-2 {
                 background-image: url(./assets/Group\ 8.svg);
